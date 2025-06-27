@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8" />
-  <title>Next Pro</title>
+  <meta charset="UTF-8">
+  <title>קורסי Next Pro</title>
   <style>
     body {
       background-color: #111;
       color: #00ffcc;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 100px;
+      padding: 40px;
+      direction: rtl;
     }
     h1 {
-      font-size: 48px;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
     }
-    p {
-      font-size: 24px;
-      margin-top: 20px;
+    .course {
+      background-color: #1c1c1c;
+      border: 2px solid #00ffcc;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .course h2 {
+      color: #00ffcc;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Next Pro</h1>
-  <p>האתר שלך עובד!</p>
+
+  <h1>קורסי Next Pro</h1>
+
+  <div class="course">
+    <h2>Beginner Level</h2>
+    <p>לימוד יסודות גיימינג, תרגול שליטה בסיסית, הבנה של ציוד ותיאום עין-יד.</p>
+  </div>
+
+  <div class="course">
+    <h2>Pro Level</h2>
+    <p>טקטיקות מתקדמות, תרגול יומיומי, הכנה למשחקים תחרותיים.</p>
+  </div>
+
+  <div class="course">
+    <h2>Master Level</h2>
+    <p>הכנה לטורנירים מקצועיים, ניתוח מהלכים, תקשורת קבוצתית ברמה גבוהה.</p>
+  </div>
+
 </body>
 </html>
