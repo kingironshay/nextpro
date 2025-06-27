@@ -4,7 +4,55 @@
   <meta charset="UTF-8" />
   <title>חנות - Next Pro</title>
   <style>
-    /* עיצוב בסיסי */
+    body {
+      background-color: #111;
+      color: #00ffcc;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      direction: rtl;
+    }
+    nav {
+      background-color: #222;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
+    .product {
+      background-color: #1c1c1c;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 2px solid #00ffcc;
+    }
+    .product h2 {
+      margin: 0 0 10px 0;
+    }
+    .product button {
+      background-color: #00ffcc;
+      color: #111;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .product button:hover {
+      background-color: #009988;
+    }
   </style>
 </head>
 <body>
@@ -18,7 +66,6 @@
 
   <h1>חנות Next Pro</h1>
 
-  <!-- רק מוצרים וכפתורי הוספה לסל -->
   <div class="product" data-name="Next Pro Bundle Level Beginner" data-price="25">
     <h2>Next Pro Bundle Level Beginner</h2>
     <p>ציוד גיימינג למתחיל + קורס גיימינג ל־beginner</p>
@@ -26,7 +73,19 @@
     <button onclick="addToCart(this)">הוסף לסל</button>
   </div>
 
-  <!-- המשך מוצרים ... -->
+  <div class="product" data-name="Next Pro Bundle Level Pro" data-price="50">
+    <h2>Next Pro Bundle Level Pro</h2>
+    <p>ציוד גיימינג מתאים לרמה + קורס גיימינג ל־semi pro</p>
+    <p>מחיר: 50 דולר</p>
+    <button onclick="addToCart(this)">הוסף לסל</button>
+  </div>
+
+  <div class="product" data-name="Next Pro Bundle Level Master" data-price="70">
+    <h2>Next Pro Bundle Level Master</h2>
+    <p>ציוד גיימינג ברמה הכי גבוהה + קורס גיימינג ברמה טורנירים</p>
+    <p>מחיר: 70 דולר</p>
+    <button onclick="addToCart(this)">הוסף לסל</button>
+  </div>
 
   <script>
     function addToCart(button) {
