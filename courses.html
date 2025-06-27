@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="he">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>קורסי Next Pro</title>
   <style>
     body {
@@ -11,9 +11,28 @@
       padding: 40px;
       direction: rtl;
     }
+    nav {
+      background-color: #222;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #00ffcc;
+      color: #111;
+    }
     h1 {
       text-align: center;
-      font-size: 36px;
       margin-bottom: 40px;
     }
     .course {
@@ -30,6 +49,12 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="index.html">בית</a>
+    <a href="courses.html">קורסים</a>
+    <a href="cart.html">סל קניות</a>
+  </nav>
 
   <h1>קורסי Next Pro</h1>
 
